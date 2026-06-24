@@ -2640,7 +2640,7 @@ const GIST_RAW = `https://gist.githubusercontent.com/18870871677/${GIST_ID}/raw/
 
 async function gistFetch(method, body) {
   const headers = {
-    'Authorization': `Bearer ${GIST_TOKEN}`,
+    'Authorization': `token ${GIST_TOKEN}`,
     'Content-Type': 'application/json',
     'Accept': 'application/vnd.github.v3+json',
     'User-Agent': 'Yunhe-App'
